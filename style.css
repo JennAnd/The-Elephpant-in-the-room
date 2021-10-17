@@ -1,0 +1,40 @@
+* {
+    box-sizing:border-box
+
+}
+
+body {
+   background-color: sandybrown;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: royalblue;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+}
+
+h1 {
+    color: royalblue;
+}
+
+.image-placement {
+    text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+    .box {
+        border-color: red;
+        margin: auto;
+        height: 300px;
+        width: 300px;
+    }
+  }
