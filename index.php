@@ -1,45 +1,47 @@
 <?php
-
-declare(strict_types=1);
+require __DIR__ . '/header.php';
 require __DIR__ . '/arrays.php';
+require __DIR__ . '/about.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zodiacs</title>
-    <link rel="stylesheet" href="article.css" />
-    <link rel="stylesheet" href="navigation.css" />
-    <link rel="stylesheet" href="button.css" />
-    <link rel="stylesheet" href="style.css">
+<nav>
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">CONTACT</a></li>
+    </ul>
+</nav>
 
-</head>
+<div class="title">
+    <h1>ZODIAC SIGNS</h1>
+</div>
+<div class="chart"><img src="images/zodiac-chart.png" alt="zodiac-chart" /></div>
+<div class="learn">
+    <h2>Learn about your Zodiac sign</h2>
+</div>
 
-<body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <h1>Larn about your Zodiac</h1>
-    <?php foreach ($zodiacs as $zodiac) : ?>
-        <div class="container">
-            <div class="box">
-                <p class="content"> <?php echo $zodiac['content'] ?> </p>
-                <p class="content"> <?php echo $zodiac['date'] ?> </p>
-                <?php if (file_exists(__DIR__ . '/images/Aladdin.jpg')) : ?>
-                    <div class="image-placement"><img src="/images/Aladdin.jpg" alt="image"></div>
 
-                <?php endif; ?>
-            </div>
+<?php foreach ($zodiacs as $zodiac) :
+    $name = $zodiac['title'];
+    $info = $zodiac['content'];
+    $dates = $zodiac['date'];
+    $elements = $zodiac['element'];
+    $img = $zodiac['image'];
+    $press = $zodiac['button'];
 
+?>
+    <div class="container">
+        <div class="box">
+            <p><img src=" <?php echo "$img"; ?>"></p>
+            <p> <?php echo $zodiac['title'] ?></p>
+            <p> <?php echo $zodiac['date'] ?></p>
+
+
+
+        <?php endforeach; ?>
         </div>
-    <?php endforeach; ?>
-</body>
 
-</html>
+    </div>
+    <?php
+    require __DIR__ . '/footer.php';
+    ?>

@@ -1,0 +1,19 @@
+<?php
+
+require __DIR__ . '/arrays.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About your Zodiac</title>
+</head>
+
+<body>
+    <p class="content"> <?php echo $zodiac['content'] ?> </p>
+
+    <?php require __DIR__ . '/footer.php';
+    ?>
