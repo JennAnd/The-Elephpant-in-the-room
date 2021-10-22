@@ -13,7 +13,4 @@ require __DIR__ . '/arrays.php';
 </head>
 
 <body>
-    <p class="content"> <?php echo $zodiac['content'] ?> </p>
-
-    <?php require __DIR__ . '/footer.php';
-    ?>
+    <p class="zodiac-content"> <?php echo $zodiac['content'] ?> </p>

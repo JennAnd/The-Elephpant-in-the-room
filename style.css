@@ -22,6 +22,7 @@ nav ul {
 body {
    background-color:#000034;
    color: whitesmoke;
+   margin: auto;
 }
 
 .container {
@@ -30,9 +31,7 @@ body {
     height: 100vh;
     width: 100%;
     flex-wrap: wrap;
-    margin: auto;
     
-   
 }
 
 .box {
@@ -64,7 +63,7 @@ img {
     align-items: center;
 }
 
-@media screen and (min-width: 475px) {
+@media screen and (min-width: 375px) {
     nav ul {
         display: flex;
         justify-content: space-around;

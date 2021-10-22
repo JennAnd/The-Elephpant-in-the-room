@@ -33,8 +33,8 @@ require __DIR__ . '/about.php';
     <div class="container">
         <div class="box">
             <p><img src=" <?php echo "$img"; ?>"></p>
-            <p> <?php echo $zodiac['title'] ?></p>
-            <p> <?php echo $zodiac['date'] ?></p>
+            <p class="zodiac-title"> <?php echo $zodiac['title'] ?></p>
+            <p class="zodiac-date"> <?php echo $zodiac['date'] ?></p>
 
 
 
