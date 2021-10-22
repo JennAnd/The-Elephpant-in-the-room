@@ -13,4 +13,12 @@ require __DIR__ . '/arrays.php';
 </head>
 
 <body>
-    <p class="zodiac-content"> <?php echo $zodiac['content'] ?> </p>
+    <div class="zodiac-info">
+        <ul>
+            <li>
+                <p class="zodiac-content"> <?php echo $zodiac['content'] ?>
+            </li>
+            <p class="zodiac-element"> <?php echo $zodiac['element'] ?>
+                </li>
+        </ul>
+    </div>
