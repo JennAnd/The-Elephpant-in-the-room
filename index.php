@@ -19,29 +19,42 @@ require __DIR__ . '/about.php';
 <div class="learn">
     <h2>Learn about your Zodiac sign</h2>
 </div>
+<div class="container">
+    <div class="box">
 
+        <?php foreach ($zodiacs as $zodiac) :
+            $name = $zodiac['title'];
+            $info = $zodiac['content'];
+            $dates = $zodiac['date'];
+            $elements = $zodiac['element'];
+            $img = $zodiac['image'];
+            $press = $zodiac['button'];
 
-<?php foreach ($zodiacs as $zodiac) :
-    $name = $zodiac['title'];
-    $info = $zodiac['content'];
-    $dates = $zodiac['date'];
-    $elements = $zodiac['element'];
-    $img = $zodiac['image'];
-    $press = $zodiac['button'];
+        ?>
+            <div class="zodiac-info">
+                <ul>
+                    <li>
+                        <p class="image"><img src=" <?php echo "$img"; ?>"></p>
+                    </li>
+                    <li>
+                        <p class="zodiac-title"><?php echo $zodiac['title'] ?></p>
+                    </li>
+                    <li>
+                        <p class="zodiac-date"><?php echo $zodiac['date'] ?></p>
+                    </li>
 
-?>
-    <div class="container">
-        <div class="box">
-            <p><img src=" <?php echo "$img"; ?>"></p>
-            <p class="zodiac-title"> <?php echo $zodiac['title'] ?></p>
-            <p class="zodiac-date"> <?php echo $zodiac['date'] ?></p>
+                    <li>
+                        <button class="zodiac-button"><?php echo $zodiac['button'] ?></button>
+                    </li>
 
+                </ul>
+            </div>
 
 
         <?php endforeach; ?>
-        </div>
-
     </div>
-    <?php
-    require __DIR__ . '/footer.php';
-    ?>
+
+</div>
+<?php
+require __DIR__ . '/footer.php';
+?>
