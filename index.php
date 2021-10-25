@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/header.php';
 require __DIR__ . '/arrays.php';
-require __DIR__ . '/about.php';
+
 ?>
 
 <nav>
@@ -29,6 +29,7 @@ require __DIR__ . '/about.php';
             $elements = $zodiac['element'];
             $img = $zodiac['image'];
             $press = $zodiac['button'];
+            $integer = $zodiac['order'];
 
         ?>
             <div class="zodiac-info">

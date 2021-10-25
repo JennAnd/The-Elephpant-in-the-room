@@ -1,0 +1,25 @@
+body {
+    background-color:#000034;
+    color: whitesmoke;
+    font-family: 'Rajdhani';
+ }
+
+ .parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+ }
+ .button-info {
+     display: flex;
+     justify-content: center;
+     width: 600px;
+     height: 800px;
+     
+ }
+
+ ul li {
+     text-decoration: none;
+     list-style: none;
+ }

@@ -1,0 +1,10 @@
+.zodiac-button {
+    margin-top: 2px;
+    background-color:#000034;
+    color: whitesmoke;
+    border-radius: 4px;
+    font-family: 'Rajdhani';
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

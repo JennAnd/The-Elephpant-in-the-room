@@ -1,4 +1,4 @@
-<footer> <small>&copy; Copyright 2021</small> </footer>
+<footer> <small>&copy; Copyright</small> <?php echo date('Y'); ?></footer>
 
 </body>
 
