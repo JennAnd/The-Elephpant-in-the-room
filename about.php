@@ -27,13 +27,13 @@ require __DIR__ . '/header.php';
             ?>
                 <ul>
                     <li>
-                        <p class="zodiac-order"> <?php echo $zodiac['order'] ?></p>
+                        <p class="zodiac-order">Order in chart: <?php echo $zodiac['order'] ?></p>
                     </li>
                     <li>
                         <p class="zodiac-content"> <?php echo $zodiac['content'] ?></p>
                     </li>
                     <li>
-                        <p class="zodiac-element"> <?php echo $zodiac['element'] ?></p>
+                        <p class="zodiac-element">Element: <?php echo $zodiac['element'] ?></p>
                     </li>
                     <?php
 

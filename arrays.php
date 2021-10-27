@@ -10,7 +10,7 @@ $zodiacs = [
         'order' => 1,
         'content' => file_get_contents(__DIR__ . '/content/aries.txt'),
         'date' => 'March 21 - April 19',
-        'element' => 'Element = Fire',
+        'element' => 'Fire',
         'image' => '/images/aries.png',
         'button' => 'More about Aries',
         'planet' => 'Mars'
@@ -21,7 +21,7 @@ $zodiacs = [
         'order' => 2,
         'content' => file_get_contents(__DIR__ . '/content/taurus.txt'),
         'date' => 'April 20 - May 20',
-        'element' => 'Element = Earth',
+        'element' => 'Earth',
         'image' => '/images/taurus.png',
         'button' => 'More about Taurus',
         'planet' => 'Venus'
@@ -32,7 +32,7 @@ $zodiacs = [
         'order' => 3,
         'content' => file_get_contents(__DIR__ . '/content/gemini.txt'),
         'date' => 'May 21 - June 20',
-        'element' => 'Element = Air',
+        'element' => 'Air',
         'image' => '/images/gemini.png',
         'button' => 'More about Gemini',
         'planet' => 'Mercury'
@@ -43,7 +43,7 @@ $zodiacs = [
         'order' => 4,
         'content' => file_get_contents(__DIR__ . '/content/cancer.txt'),
         'date' => 'June 21 - July 22',
-        'element' => 'Element = Water',
+        'element' => 'Water',
         'image' => '/images/cancer.png',
         'button' => 'More about Cancer',
         'planet' => 'the Moon'
@@ -54,7 +54,7 @@ $zodiacs = [
         'order' => 5,
         'content' => file_get_contents(__DIR__ . '/content/leo.txt'),
         'date' => 'July 23 - August 22',
-        'element' => 'Element = Fire',
+        'element' => 'Fire',
         'image' => '/images/leo.png',
         'button' => 'More about Leo',
         'planet' => 'the Sun'
@@ -65,7 +65,7 @@ $zodiacs = [
         'order' => 6,
         'content' => file_get_contents(__DIR__ . '/content/virgo.txt'),
         'date' => 'August 23 – September 22',
-        'element' => 'Element = Earth',
+        'element' => 'Earth',
         'image' => '/images/virgo.png',
         'button' => 'More about Virgo',
         'planet' => 'Mercury'
@@ -76,7 +76,7 @@ $zodiacs = [
         'order' => 7,
         'content' => file_get_contents(__DIR__ . '/content/libra.txt'),
         'date' => 'September 23 - October 22',
-        'element' => 'Element = Air',
+        'element' => 'Air',
         'image' => '/images/libra.png',
         'button' => 'More about Libra',
         'planet' => 'Venus'
@@ -87,7 +87,7 @@ $zodiacs = [
         'order' => 8,
         'content' => file_get_contents(__DIR__ . '/content/scorpio.txt'),
         'date' => 'October 23 - November 21',
-        'element' => 'Element = Water',
+        'element' => 'Water',
         'image' => '/images/scorpio.png',
         'button' => 'More about Scorpio',
         'planet' => 'Pluto'
@@ -98,7 +98,7 @@ $zodiacs = [
         'order' => 9,
         'content' => file_get_contents(__DIR__ . '/content/sagittarius.txt'),
         'date' => 'November 22 - December 21',
-        'element' => 'Element = Fire',
+        'element' => 'Fire',
         'image' => '/images/sagittarius.png',
         'button' => 'More about Sagittarius',
         'planet' => 'Jupiter'
@@ -109,7 +109,7 @@ $zodiacs = [
         'order' => 10,
         'content' => file_get_contents(__DIR__ . '/content/capricorn.txt'),
         'date' => 'December 22 - January 19',
-        'element' => 'Element = Earth',
+        'element' => 'Earth',
         'image' => '/images/capricorn.png',
         'button' => 'More about Capricorn',
         'planet' => 'Saturn'
@@ -120,7 +120,7 @@ $zodiacs = [
         'order' => 11,
         'content' => file_get_contents(__DIR__ . '/content/aquarius.txt'),
         'date' => 'January 20 - February 18',
-        'element' => 'Element = Air',
+        'element' => 'Air',
         'image' => '/images/aquarius.png',
         'button' => 'More about Aquarius',
         'planet' => 'Uranus'
@@ -131,7 +131,7 @@ $zodiacs = [
         'order' => 12,
         'content' => file_get_contents(__DIR__ . '/content/pisces.txt'),
         'date' => 'February 19 - March 20',
-        'element' => 'Element = Water',
+        'element' => 'Water',
         'image' => '/images/pisces.png',
         'button' => 'More about Pisces',
         'planet' => 'Neptune'
