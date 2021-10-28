@@ -2,7 +2,7 @@
 
 require __DIR__ . '/arrays.php';
 require __DIR__ . '/header.php';
-/*require __DIR__ . '/functions.php';*/
+require __DIR__ . '/functions.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,30 +18,32 @@ require __DIR__ . '/header.php';
 <body>
     <div class="parent">
         <div class="button-info">
-            <?php foreach ($zodiacs as $zodiac) :
+            <?php
+            $pressedOrder = $_GET['order'];
+            $info = $zodiacs[$pressedOrder - 1]['content'];
+            $elements = $zodiacs[$pressedOrder - 1]['element'];
+            $integer = $zodiacs[$pressedOrder - 1]['order'];
+            $ruledBy = $zodiacs[$pressedOrder - 1]['planet'];
 
-                $info = $zodiac['content'];
-                $elements = $zodiac['element'];
-                $integer = $zodiac['order'];
-                $ruledBy = $zodiac['planet'];
             ?>
-                <ul>
-                    <li>
-                        <p class="zodiac-order">Order in chart: <?php echo $zodiac['order'] ?></p>
-                    </li>
-                    <li>
-                        <p class="zodiac-content"> <?php echo $zodiac['content'] ?></p>
-                    </li>
-                    <li>
-                        <p class="zodiac-element">Element: <?php echo $zodiac['element'] ?></p>
-                    </li>
-                    <?php
+            <ul>
+                <li>
+                    <p class="zodiac-order">Order in chart: <?php echo $integer ?></p>
+                </li>
+                <li>
+                    <p class="zodiac-content"> <?php echo  $info ?></p>
+                </li>
+                <li>
+                    <p class="zodiac-element">Element: <?php echo $elements ?></p>
+                </li>
+                <?php
 
-                    if ($ruledBy === 'the Sun') {
-                        echo "This is the only Zodiac sign ruled by $ruledBy.";
-                    } ?>
+                echo ruledBy($zodiacs, $ruledBy);
+                /*ruledBy2($zodiacs, $ruledBy);*/
 
-                </ul>
-            <?php endforeach; ?>
+                ?>
+
+            </ul>
+
         </div>
     </div>

@@ -4,7 +4,9 @@
     color: whitesmoke;
     border-radius: 4px;
     font-family: 'Rajdhani';
+    font-size: smaller;
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    border: 1px solid silver; 
 }

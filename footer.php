@@ -1,4 +1,4 @@
-<footer> <small>&copy; Copyright</small> <?php echo date('Y'); ?></footer>
+<footer><?php echo date('Y-m-d'); ?></footer>
 
 </body>
 

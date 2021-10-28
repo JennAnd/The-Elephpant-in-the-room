@@ -1,25 +1,40 @@
 <?php
 
-/*function greet($firstName, $lastName)
-{
-    return "Hey, $firstName $lastName!";
-}
-
-$greeting = greet('Ace', 'Ventura');
-echo $greeting; // Hey, Ace Ventura!
-
-welcome... 
-
-<?php
-
 declare(strict_types=1);
 
-function getDescription(string $movie, int $year, float $rating): string
+function getPageName($name)
 {
-    return "The movie $movie was released $year and is rated $rating on IMDb.";
+    echo $name;
 }
 
-$description = getDescription('Ace Ventura: Pet Detective', 1994, 6.9);
-echo $description; // The movie Ace Ventura: Pet Detective was released 1994 and is rated 6.9 on IMDb.
+// function för att få ut planeten 
+function ruledBy($zodiacs, $ruledBy)
+{
+    foreach ($zodiacs as $zodiac) {
 
-do you recognize yourself....or jämför....
+        if ($ruledBy === $zodiac['planet']) {
+            return "This Zodiac sign is ruled by $ruledBy.";
+        }
+    }
+}
+
+// function möjligtvis kunna få ut en sign på sidan 
+/*function ruledBy2($zodiacs)
+{
+    foreach ($zodiacs as $zodiac) {
+        for ($x = 0; $x = $zodiac; $x++)
+            echo $zodiac['content'];
+    }
+}
+
+//function för att koppla zodiacs order med links id. 
+function getPage(int $zodiacOrder, array $links)
+{
+    foreach ($links as $link) {
+        $id = $link['id'];
+        if ($id == $zodiacOrder) {
+            return $link[''];
+        }
+    }
+}
+*/
