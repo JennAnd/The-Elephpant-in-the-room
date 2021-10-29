@@ -1,8 +1,7 @@
 nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 5px;
-    background-color: rgb(107, 68, 107);
-    
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 5px;
+  background-color: rgb(107, 68, 107);
 }

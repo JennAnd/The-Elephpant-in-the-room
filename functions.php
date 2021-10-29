@@ -7,7 +7,7 @@ function getPageName($name)
     echo $name;
 }
 
-// function för att få ut planeten 
+
 function ruledBy($zodiacs, $ruledBy)
 {
     foreach ($zodiacs as $zodiac) {
@@ -17,24 +17,3 @@ function ruledBy($zodiacs, $ruledBy)
         }
     }
 }
-
-// function möjligtvis kunna få ut en sign på sidan 
-/*function ruledBy2($zodiacs)
-{
-    foreach ($zodiacs as $zodiac) {
-        for ($x = 0; $x = $zodiac; $x++)
-            echo $zodiac['content'];
-    }
-}
-
-//function för att koppla zodiacs order med links id. 
-function getPage(int $zodiacOrder, array $links)
-{
-    foreach ($links as $link) {
-        $id = $link['id'];
-        if ($id == $zodiacOrder) {
-            return $link[''];
-        }
-    }
-}
-*/

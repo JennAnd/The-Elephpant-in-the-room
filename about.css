@@ -1,25 +1,34 @@
 body {
-    background-color:#000034;
-    color: whitesmoke;
-    font-family: 'Rajdhani';
- }
+  background-color: #000034;
+  color: whitesmoke;
+  font-family: 'Rajdhani';
+}
 
- .parent {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    
- }
- .button-info {
-     display: flex;
-     justify-content: center;
-     width: 600px;
-     height: 800px;
-     
- }
+.parent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.button-info {
+  display: flex;
+  justify-content: left;
+  width: 600px;
+}
 
- ul li {
-     text-decoration: none;
-     list-style: none;
- }
+.zodiac-order {
+  margin-right: 10%;
+  font-weight: bold;
+}
+
+.zodiac-content {
+  margin-right: 10%;
+  text-align: center;
+}
+
+.zodiac-element {
+  margin-right: 10%;
+}
+
+.planet {
+  margin-right: 10%;
+}

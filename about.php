@@ -13,6 +13,7 @@ require __DIR__ . '/functions.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About your Zodiac</title>
     <link rel="stylesheet" href="about.css" />
+
 </head>
 
 <body>
@@ -36,12 +37,12 @@ require __DIR__ . '/functions.php';
                 <li>
                     <p class="zodiac-element">Element: <?php echo $elements ?></p>
                 </li>
-                <?php
+                <div class="planet">
+                    <?php
 
-                echo ruledBy($zodiacs, $ruledBy);
-                /*ruledBy2($zodiacs, $ruledBy);*/
-
-                ?>
+                    echo ruledBy($zodiacs, $ruledBy);
+                    ?>
+                </div>
 
             </ul>
 
