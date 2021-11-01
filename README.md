@@ -1,4 +1,4 @@
-INSERT MANDATORY GIF
+<img src="https://media.giphy.com/media/33KNW6bBorFzqdyLSP/giphy.gif" alt= "aminated GIF of the Zodiac sign Scorpio" />
 
 # Project Title
 
