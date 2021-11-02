@@ -13,13 +13,13 @@ This site is about all the existing Zodiac signs. You can read and learn about a
 
 # Code Review
 
-Code review written by [Jane Doh](https://github.com/username).
+Code review written by [Amanda Hultén](https://github.com/amandahulten).
 
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-2. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-3. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-4. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-5. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
+1. `about.php:7-17` - Since you already have a ´header.php´ where you store all your header information and then use require to include the information in this file, you don't need to repeat it here. 
+2. `functions.php:5&11` - When you use `declare(strict_types=1);` you also need to declare strict types on the functions, ex ´function getPageName(string $name) : string´.
+3. `functions.php:5-8` - Don't forget to use ´return´ in all functions instead of ´echo´.
+4. `TIP` - To navigate easier on your website, you could add a home-button on your "More about"-pages. 
+5. `TIP` - To get a better overview of your files, you could add all the php-files to a folder (except the php-files that are pages on your website, ex. index.php).
 
 # Testers
 
